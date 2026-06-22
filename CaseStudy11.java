@@ -33,9 +33,7 @@ public class ChromeCaseStudy11 {
 		WebElement element = driver.findElement(By.xpath("//a[@class='_btnclick']"));
 		Actions act = new Actions(driver);
 		act.moveToElement(element).build().perform();
-//		Thread.sleep(10000);
-////		driver.findElement(By.className("_crosslog")).click();
-//		Thread.sleep(10000);
+
 		WebElement element1 = driver.findElement(By.xpath("//div[@class='_dropdownromenu drhvr']//a[1]"));
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -52,9 +50,9 @@ public class ChromeCaseStudy11 {
 		driver.findElement(By.id("txtEmailNew")).sendKeys("omkumar@gmail.com");
 		driver.findElement(By.id("shwotp")).click();
 	}
-//	@AfterTest
-//	public void TearDown() {
-//		driver.quit();
-//	}
+	@AfterTest
+	public void TearDown() {
+		driver.quit();
+	}
 
 }
