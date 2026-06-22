@@ -49,7 +49,7 @@ public class ChromeCaseStudy11 {
 		FileUtils.copyFile(src, des);
 		System.out.println("Screen shot saved successfully");
 		
-		driver.findElement(By.id("txtEmailNew")).sendKeys("thebishakhabharti@gmail.com");
+		driver.findElement(By.id("txtEmailNew")).sendKeys("omkumar@gmail.com");
 		driver.findElement(By.id("shwotp")).click();
 	}
 //	@AfterTest
