@@ -25,28 +25,28 @@ public class ChromeCaseStudy12 {
         String String1 = "MyAccount";
         String String2 = "My Booking";
 
-        // assertEquals
+      
         Assert.assertEquals(String1, "MyAccount");
         System.out.println("assertEquals Passed");
 
-        // assertNotEquals
+        
         Assert.assertNotEquals(String1, String2);
         System.out.println("assertNotEquals Passed");
 
-        // assertTrue
+
         Assert.assertTrue(String1.equals("MyAccount"));
         System.out.println("assertTrue Passed");
 
-        // assertFalse
+    
         Assert.assertFalse(String1.equals(String2));
         System.out.println("assertFalse Passed");
 
-        // assertNull
+     
         String value1 = null;
         Assert.assertNull(value1);
         System.out.println("assertNull Passed");
 
-        // assertNotNull
+       
         String value2 = "EaseMyTrip";
         Assert.assertNotNull(value2);
         System.out.println("assertNotNull Passed");
